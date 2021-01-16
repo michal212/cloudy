@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #98acf8;
+}
+
+.menu{display: flex;
+justify-content: end;
+position: relative;
+
+}      
+.services,   
+.ganer,
+#home {
+    margin: 10px;
+}
+
+.services ul,
+.ganer ul  {
+    position: absolute;
+    padding: 10px;
+    margin:10px;
+    background-color:#f8efd4;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 0.4s ease ;
+    pointer-events: none;
+}
+
+.services li:hover,
+.ganer li:hover{
+    background-color:#fcf8e8;
+}
+   
+
+.services li,
+.ganer li {
+    list-style: none;
+    color: black;
+}
+
+
+.services a,
+.ganer a ,
+.home a {
+    text-decoration: none;
+    color: black;
+}
+
+.services button :focus + ul,
+.ganer button :focus+ ul {
+opacity:1;
+transform: translateY(0px);
+cursor: pointer;
+}
+
+
+.dropdown button{
+    cursor: pointer;
+}
+.ganer button:focus + ul ,
+.services button:focus + ul{
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0px);                         
+
+}
+
+.hedaer {
+    padding:10px;
+}
+h1,h3 {
+    text-align: center;
+    color:#6a2c70;
+    background-color: white ;
+    font-family: 'Permanent Marker', cursive;
+   
+}
+img {
+    width:100%;
+    height:250px;
+}
+.container {
+    width:90%;
+    margin-left : 60px;
+    background-color:#f0e2d0;
+    display: grid;
+    
+    grid-template-areas:
+    "box1 box2 box3"
+    "box4 box5 box6"
+     "box7 box8 box9";
+}
+
+
+.box1{
+    grid-area: box1;
+    border: 2px solid white;
+    border-radius: 10px;
+    
+}
+
+.box2{
+    grid-area: box2;
+    border: 2px solid white;
+}
+
+
+.box3{
+    grid-area: box3;
+    border: 2px solid white;
+}
+
+.box4{
+    grid-area: box4;
+    border: 2px solid white;
+}
+
+.box5{
+    grid-area: box5;
+    border: 2px solid white;
+}
+
+.box6{
+    grid-area: box6;
+    border: 2px solid white;
+}
+
+.box7{
+    grid-area: box7;
+    border: 2px solid white;
+}
+.box8{
+    grid-area: box8;
+    border: 2px solid white;
+}
+.box9{
+    grid-area: box9;
+    border: 2px solid white;
+}
+
+.box1:hover, .box2:hover, .box3:hover,
+    .box4:hover, .box5:hover, .box6:hover,
+     .box7:hover, .box8:hover, .box9:hover{
+         transform: scale(1.2);
+         border:#fdb827 4px solid;
+         border-radius: 10px;
+        
+     }
